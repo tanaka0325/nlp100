@@ -3,7 +3,7 @@
 
 s = "stressed"
 
-def reverse(s :str) -> str:
+def reverse(s: str) -> str:
     list = []
 
     for char in s:
