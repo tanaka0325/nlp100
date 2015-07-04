@@ -10,9 +10,10 @@ words = s.split(" ")
 words_index = {}
 
 for i, word in enumerate(words):
-    if i in [1, 5, 6, 7, 8, 9, 15, 16, 19]:
-        words_index[word[:1]] = i
+    n = i + 1
+    if n in [1, 5, 6, 7, 8, 9, 15, 16, 19]:
+        words_index[word[:1]] = n
     else:
-        words_index[word[:2]] = i
+        words_index[word[:2]] = n
 
 print(words_index)
